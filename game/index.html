@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHADOW LANTERN — a top-down stealth game</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; background: #0b1120; height: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh;
+  }
+  #wrap { width: min(1280px, 100vw); }
+  canvas {
+    display: block; width: 100%; height: auto;
+    background: #1c2433; cursor: crosshair;
+    image-rendering: auto;
+  }
+  #note {
+    color: #64748b; font-size: 12px; text-align: center;
+    padding: 6px 0 0; margin: 0;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <p id="note">SHADOW LANTERN — steal every lantern, reach the exit, stay out of the cones.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
